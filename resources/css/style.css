@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  font-family: Helvetica;
+
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+}
+
+.header,
+.separator {
+  background-image: url("../images/the-flatiron-building.png");
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/*
+Had to add background-size vertically 100%, because the vertical size of the image provided for the background was not the same as the one used in the example website.
+When the vertical 100% vertical size is applied to the .separator, it breaks the .separator display.
+*/
+.header {
+  background-size: auto 100%;
+}
+
+.footer {
+  font-size: 11px;
+  background-color: dimgray;
+  color: white;
+  text-align: left;
+}
+
+.separator h2 {
+  font-size: 23px;
+}
+
+/*
+Could have used an "a{ }" definition, but since the styling guidelines that are applied here seem only to apply to the links in the header and footer, I selected them separately here. If in the future links are added in other places (contact for example), they will not be affected by design.
+*/
+.header a,
+.footer a {
+  font-size: 18px;
+  color: white;
+}
